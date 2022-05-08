@@ -1,0 +1,7 @@
+目标文件:E:\Code\GX\CCM4202S_DEMO\Obj\bin\test.bin   大小:0x0004D10C
+各部分大小如下:
+
+索引                        文件名                                            大小              偏移量            强制插入
+ 1      E:\Code\GX\CCM4202S_DEMO\Obj\bin\Boot.bin                           0x00006D50        0x00000000             否
+ 2      E:\Code\GX\CCM4202S_DEMO\Obj\bin\CCM4202S_Demo_EFM.bin              0x0002AD50        0x0000A000             否
+ 3      E:\Code\GX\CCM4202S_DEMO\Obj\bin\4202_ECS160_Binlib_0x0803C000_A3.bin        0x0001110C        0x0003C000             否

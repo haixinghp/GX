@@ -1,0 +1,11 @@
+..\obj\obj_debug_efm\system_armcm4.o: ..\Src\Source\ccore\system_ARMCM4.c
+..\obj\obj_debug_efm\system_armcm4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\obj_debug_efm\system_armcm4.o: ..\Src\Source\drv\inc\libRegOpt.h
+..\obj\obj_debug_efm\system_armcm4.o: C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include\ARMCM4_FP.h
+..\obj\obj_debug_efm\system_armcm4.o: ..\Src\Source\ccore\core_cm4.h
+..\obj\obj_debug_efm\system_armcm4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\obj_debug_efm\system_armcm4.o: ..\Src\Source\ccore\core_cmInstr.h
+..\obj\obj_debug_efm\system_armcm4.o: ..\Src\Source\ccore\cmsis_armcc.h
+..\obj\obj_debug_efm\system_armcm4.o: ..\Src\Source\ccore\core_cmFunc.h
+..\obj\obj_debug_efm\system_armcm4.o: ..\Src\Source\ccore\core_cmSimd.h
+..\obj\obj_debug_efm\system_armcm4.o: C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include\system_ARMCM4.h

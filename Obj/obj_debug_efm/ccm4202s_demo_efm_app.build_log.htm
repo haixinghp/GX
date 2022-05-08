@@ -1,0 +1,1477 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: hx hx, hx, LIC=HN0AE-561VU-SB7EJ-USUJB-K2DWE-40LHT
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+E:\Code\GX\CCM4202S_DEMO\User\CCM4202S_DEMO.uvprojx
+Project File Date:  11/09/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'DEBUG_EFM'
+Note: source file '..\Src\Source\Lock\hostlib\md5.c' - object file renamed from '..\Obj\obj_debug_efm\md5.o' to '..\Obj\obj_debug_efm\md5_1.o'.
+Note: source file '..\Src\Source\app\MRW SENSOR\bsp\Timer.c' - object file renamed from '..\Obj\obj_debug_efm\Timer.o' to '..\Obj\obj_debug_efm\timer_1.o'.
+compiling Maths.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\Myconfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Maths.c: 3 warnings, 0 errors
+compiling Menu.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu.c(12): warning:  #1215-D: #warning directive: MENU模块使能!
+  #warning MENU模块使能!
+..\Src\Source\Lock\Menu\Menu.c(346): warning:  #177-D: variable "u8_KeyValue"  was declared but never referenced
+  	INT8U u8_KeyValue = 0;									//扫描到的键值
+..\Src\Source\Lock\Menu\Menu.c: 5 warnings, 0 errors
+compiling main.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\app\apdu\id2.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+main\main.c(301): warning:  #223-D: function "EFLASH_PageErase" declared implicitly
+      ret = EFLASH_PageErase(addr);
+main\main.c(308): warning:  #223-D: function "EFLASH_WordProg" declared implicitly
+          ret = EFLASH_WordProg((addr+i*0x04),pgm_data[i]);
+main\main.c(298): warning:  #550-D: variable "ret"  was set but never used
+      U8 ret = 0;
+main\main.c(89): warning:  #177-D: function "Printf_Version"  was declared but never referenced
+  static void Printf_Version(void)
+main\main.c(99): warning:  #177-D: function "Reback_Boot"  was declared but never referenced
+  static void Reback_Boot(void)
+main\main.c: 9 warnings, 0 errors
+compiling Menu_CycleScanMenu.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_CycleScanMenu.c: 3 warnings, 0 errors
+compiling Menu_WhenEnterMenuOperation.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(188): warning:  #111-D: statement is unreachable
+          break;
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(207): warning:  #188-D: enumerated type mixed with another type
+              pCommOpenAndInfoUpload->autoLock = 0;
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(212): warning:  #188-D: enumerated type mixed with another type
+              pCommOpenAndInfoUpload->autoLock = 1;
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(514): warning:  #188-D: enumerated type mixed with another type
+              pCommOpenAndInfoUpload->autoLock = 0;
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(519): warning:  #188-D: enumerated type mixed with another type
+              pCommOpenAndInfoUpload->autoLock = 1;
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(610): warning:  #188-D: enumerated type mixed with another type
+              pCommOpenAndInfoUpload->autoLock = 0;
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(615): warning:  #188-D: enumerated type mixed with another type
+              pCommOpenAndInfoUpload->autoLock = 1;
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(62): warning:  #177-D: variable "i"  was declared but never referenced
+      INT16U i;
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c(39): warning:  #177-D: function "Menu_Face_SetDemoMode"  was declared but never referenced
+  static void Menu_Face_SetDemoMode(void)
+..\Src\Source\Lock\Menu\Menu_WhenEnterMenuOperation.c: 12 warnings, 0 errors
+compiling Menu_GetInputInfo.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c(402): warning:  #177-D: variable "u8_i"  was declared but never referenced
+      INT8U u8_i;
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c(502): warning:  #177-D: variable "u8_i"  was declared but never referenced
+      INT8U u8_i;
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c(609): warning:  #177-D: variable "u8_i"  was declared but never referenced
+      INT8U u8_i;
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c(704): warning:  #177-D: variable "u8_i"  was declared but never referenced
+      INT8U u8_i;
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c(705): warning:  #177-D: variable "Tmp"  was declared but never referenced
+      INT8S Tmp = 0;
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c(739): warning:  #177-D: variable "u8_i"  was declared but never referenced
+      INT8U u8_i;
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c(35): warning:  #177-D: variable "testModeCode"  was declared but never referenced
+  static const INT8U testModeCode[] = TEST_MODE_CODE;
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c(93): warning:  #177-D: function "EnterProjectModeCheckA"  was declared but never referenced
+  static INT8S EnterProjectModeCheckA(INT8U *data, INT8U len)
+..\Src\Source\Lock\Menu\Menu_GetInputInfo.c: 11 warnings, 0 errors
+compiling Function.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\UserApp\Function.c(20): warning:  #1215-D: #warning directive: FUNCTION模块使能!
+  #warning FUNCTION模块使能!
+..\Src\Source\Lock\UserApp\Function.c(177): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\UserApp\Function.c: 5 warnings, 0 errors
+compiling Menu_DataStructure.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_DataStructure.c: 3 warnings, 0 errors
+compiling Menu_KeyBackLight.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_KeyBackLight.c: 3 warnings, 0 errors
+compiling APP_Power.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\UserApp\APP_Power.c(52): warning:  #1215-D: #warning directive: APP_POWER模块使能!
+  #warning APP_POWER模块使能!
+..\Src\Source\Lock\UserApp\APP_Power.c(151): warning:  #61-D: integer operation result is out of range
+      CPM->CPM_PWRCR = (CPM->CPM_PWRCR & ~(1 << 30)) | (1 << 31);
+..\Src\Source\Lock\UserApp\APP_Power.c(151): warning:  #68-D: integer conversion resulted in a change of sign
+      CPM->CPM_PWRCR = (CPM->CPM_PWRCR & ~(1 << 30)) | (1 << 31);
+..\Src\Source\Lock\UserApp\APP_Power.c(152): warning:  #61-D: integer operation result is out of range
+      CPM->CPM_PWRCR &= ~(1 << 31);
+..\Src\Source\Lock\UserApp\APP_Power.c(565): warning:  #177-D: variable "tick"  was declared but never referenced
+      uint32_t tick;
+..\Src\Source\Lock\UserApp\APP_Power.c(65): warning:  #177-D: function "log_init"  was declared but never referenced
+  static void log_init(void)
+..\Src\Source\Lock\UserApp\APP_Power.c(93): warning:  #177-D: function "Printf_Version"  was declared but never referenced
+  static void Printf_Version(void)
+..\Src\Source\Lock\UserApp\APP_Power.c: 10 warnings, 0 errors
+compiling Menu_KeyDeal.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_KeyDeal.c: 3 warnings, 0 errors
+compiling AppUser.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\UserApp\AppUser.c(23): warning:  #1215-D: #warning directive: APP_USER模块使能!
+  #warning APP_USER模块使能!
+..\Src\Source\Lock\UserApp\AppUser.c: 4 warnings, 0 errors
+compiling Menu_WhenExitMenuOperation.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_WhenExitMenuOperation.c: 3 warnings, 0 errors
+compiling Menu_Finger.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_Finger.c(884): warning:  #111-D: statement is unreachable
+  		break;
+..\Src\Source\Lock\Menu\Menu_Finger.c(850): warning:  #177-D: variable "IdTmp"  was declared but never referenced
+  	uint16_t IdTmp = 0;
+..\Src\Source\Lock\Menu\Menu_Finger.c: 5 warnings, 0 errors
+compiling Menu_CurrentOperate.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_CurrentOperate.c: 3 warnings, 0 errors
+compiling Menu_Face.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_Face.c(1391): warning:  #188-D: enumerated type mixed with another type
+          pBleR8CatEyeOTAAck->faceOTAing.status = 0;
+..\Src\Source\Lock\Menu\Menu_Face.c(1414): warning:  #188-D: enumerated type mixed with another type
+                  pBleR8CatEyeOTAAck->faceOTAing.status = noteOTAState.state;
+..\Src\Source\Lock\Menu\Menu_Face.c(1423): warning:  #188-D: enumerated type mixed with another type
+                  pBleR8CatEyeOTAAck->faceOTAing.status = noteOTAState.state;
+..\Src\Source\Lock\Menu\Menu_Face.c(1440): warning:  #188-D: enumerated type mixed with another type
+              pBleR8CatEyeOTAAck->faceOTAing.status = 0;
+..\Src\Source\Lock\Menu\Menu_Face.c(1578): warning:  #550-D: variable "waitCaptureFlag"  was set but never used
+      static uint8_t waitCaptureFlag = 0; //等待抓拍标志
+..\Src\Source\Lock\Menu\Menu_Face.c(1991): warning:  #177-D: variable "userID"  was declared but never referenced
+      uint16_t userID = 0;
+..\Src\Source\Lock\Menu\Menu_Face.c: 9 warnings, 0 errors
+compiling Menu_Voice.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_Voice.c: 3 warnings, 0 errors
+compiling Menu_Wifi.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\Menu\Menu_Wifi.c(203): warning:  #1-D: last line of file ends without a newline
+         /************************************Code End******************************************/
+..\Src\Source\Lock\Menu\Menu_Wifi.c(24): warning:  #177-D: function "Menu_BleConfigWifiData"  was declared but never referenced
+  static void Menu_BleConfigWifiData(void)
+..\Src\Source\Lock\Menu\Menu_Wifi.c: 5 warnings, 0 errors
+compiling HAL_Comm.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_Comm.c(16): warning:  #1215-D: #warning directive: HAL_COMM模块使能!
+  #warning HAL_COMM模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_Comm.c(370): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint32_t i;
+..\Src\Source\Lock\ModuleHal\HAL_Comm.c(371): warning:  #177-D: variable "tmp"  was declared but never referenced
+  	uint8_t tmp=0;
+..\Src\Source\Lock\ModuleHal\HAL_Comm.c(934): warning:  #188-D: enumerated type mixed with another type
+  	return bleCom.ProtocolRx.front.cmd;
+..\Src\Source\Lock\ModuleHal\HAL_Comm.c(1104): warning:  #188-D: enumerated type mixed with another type
+  		comSendParm.datLen = HAL_Comm_BleCmdSend(bleCom.Protocol.front.cmd);
+..\Src\Source\Lock\ModuleHal\HAL_Comm.c(1473): warning:  #940-D: missing return statement at end of non-void function "HAL_Comm_WifiCtInit" 
+  }
+..\Src\Source\Lock\ModuleHal\HAL_Comm.c: 9 warnings, 0 errors
+compiling HAL_SysTimer.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_SysTimer.c(16): warning:  #1215-D: #warning directive: HAL_SYS_TIMER模块使能!
+  #warning HAL_SYS_TIMER模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_SysTimer.c(37): warning:  #177-D: function "HAL_SysTimeRun"  was declared but never referenced
+  static void HAL_SysTimeRun(void)
+..\Src\Source\Lock\ModuleHal\HAL_SysTimer.c: 5 warnings, 0 errors
+compiling HAL_FaceId.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_FaceId.c(16): warning:  #1215-D: #warning directive: HAL_FACE_ID模块使能!
+  #warning HAL_FACE_ID模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_FaceId.c(1910): warning:  #177-D: variable "lenTmp"  was declared but never referenced
+      uint16_t lenTmp = 0;
+..\Src\Source\Lock\ModuleHal\HAL_FaceId.c: 5 warnings, 0 errors
+compiling HAL_KeyLight.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_KeyLight.c(16): warning:  #1215-D: #warning directive: HAL_KEY_LIGHT模块使能!
+  #warning HAL_KEY_LIGHT模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_KeyLight.c(196): warning:  #550-D: variable "len"  was set but never used
+      INT16U len = 0;
+..\Src\Source\Lock\ModuleHal\HAL_KeyLight.c: 5 warnings, 0 errors
+compiling HAL_KeySacn.C...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_KeySacn.C(16): warning:  #1215-D: #warning directive: HAL_KEY_SCAN模块使能!
+  #warning HAL_KEY_SCAN模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_KeySacn.C: 4 warnings, 0 errors
+compiling Menu_Comm.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\hostlib\km.h(228): warning:  #1295-D: Deprecated declaration km_delete_all - give arg types
+  uint32_t km_delete_all();
+..\Src\Source\Lock\hostlib\km.h(390): warning:  #1295-D: Deprecated declaration km_init - give arg types
+  uint32_t km_init();
+..\Src\Source\Lock\hostlib\km.h(396): warning:  #1295-D: Deprecated declaration km_cleanup - give arg types
+  void km_cleanup();
+..\Src\Source\Lock\Menu\Menu_Comm.c(141): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint16_t i = 0;
+..\Src\Source\Lock\Menu\Menu_Comm.c(142): warning:  #177-D: variable "j"  was declared but never referenced
+  	uint16_t j = 0;
+..\Src\Source\Lock\Menu\Menu_Comm.c(554): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint16_t i;
+..\Src\Source\Lock\Menu\Menu_Comm.c(1392): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *__restrict__"
+                  strncpy(&id2_se.token_buf[2], dec_out, dec_len);
+..\Src\Source\Lock\Menu\Menu_Comm.c(1392): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *__restrict__"
+                  strncpy(&id2_se.token_buf[2], dec_out, dec_len);
+..\Src\Source\Lock\Menu\Menu_Comm.c(1422): warning:  #177-D: variable "id2_flag"  was declared but never referenced
+              uint8_t id2_flag = 0;
+..\Src\Source\Lock\Menu\Menu_Comm.c(1741): warning:  #177-D: variable "Tmp"  was declared but never referenced
+  	TYPEs_StorageSysData Tmp;
+..\Src\Source\Lock\Menu\Menu_Comm.c(1938): warning:  #177-D: variable "j"  was declared but never referenced
+  	uint16_t j = 0;
+..\Src\Source\Lock\Menu\Menu_Comm.c(2086): warning:  #188-D: enumerated type mixed with another type
+  	pBleQueryLockConfigTableAck->volumeStatus =  storageSave.sysDat.voiceSw;	    //锁音量状态
+..\Src\Source\Lock\Menu\Menu_Comm.c(3752): warning:  #188-D: enumerated type mixed with another type
+  	TYPEe_BackKeyStatus openKey = st_InputInfo.openKey;
+..\Src\Source\Lock\Menu\Menu_Comm.c(3753): warning:  #188-D: enumerated type mixed with another type
+  	TYPEe_BackKeyStatus closeKey = st_InputInfo.closeKey;
+..\Src\Source\Lock\Menu\Menu_Comm.c(3834): warning:  #188-D: enumerated type mixed with another type
+              pCommOpenAndInfoUpload->autoLock = 0;
+..\Src\Source\Lock\Menu\Menu_Comm.c(3839): warning:  #188-D: enumerated type mixed with another type
+              pCommOpenAndInfoUpload->autoLock = 1;
+..\Src\Source\Lock\Menu\Menu_Comm.c(4138): warning:  #177-D: variable "temp"  was declared but never referenced
+  	uint32_t temp = 0;
+..\Src\Source\Lock\Menu\Menu_Comm.c(51): warning:  #177-D: variable "gLockBleName"  was declared but never referenced
+  static uint8_t const gLockBleName[] = "LOCK_";
+..\Src\Source\Lock\Menu\Menu_Comm.c: 21 warnings, 0 errors
+compiling HAL_Power.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_Power.c(16): warning:  #1215-D: #warning directive: HAL_POWER模块使能!
+  #warning HAL_POWER模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_Power.c(376): warning:  #1-D: last line of file ends without a newline
+  	   /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleHal\HAL_Power.c: 5 warnings, 0 errors
+compiling HAL_Voice.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_Voice.c(16): warning:  #1215-D: #warning directive: HAL_VOICE模块使能!
+  #warning HAL_VOICE模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_Voice.c: 4 warnings, 0 errors
+compiling HAL_Storage.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_Storage.c(17): warning:  #1215-D: #warning directive: HAL_STORAGE模块使能!
+  #warning HAL_STORAGE模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_Storage.c(826): warning:  #223-D: function "HAL_Storage_DelAllFingerLocal" declared implicitly
+      HAL_Storage_DelAllFingerLocal(pSave, pDat);        //清除所有的本地指纹
+..\Src\Source\Lock\ModuleHal\HAL_Storage.c(1027): warning:  #159-D: declaration is incompatible with previous "HAL_Storage_DelAllFingerLocal"  (declared at line 826)
+  INT8S HAL_Storage_DelAllFingerLocal(TYPEs_StorageSave *msg, TYPEs_SystemDat *pDat)
+..\Src\Source\Lock\ModuleHal\HAL_Storage.c(1494): warning:  #177-D: variable "addr"  was declared but never referenced
+  	uint32_t addr ;
+..\Src\Source\Lock\ModuleHal\HAL_Storage.c: 7 warnings, 0 errors
+compiling HAL_RTC.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_RTC.c(16): warning:  #1215-D: #warning directive: HAL_RTC模块使能!
+  #warning HAL_RTC模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_RTC.c(128): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleHal\HAL_RTC.c: 5 warnings, 0 errors
+compiling HAL_Finger.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_Finger.c(16): warning:  #1215-D: #warning directive: HAL_FINGER模块使能!
+  #warning HAL_FINGER模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_Finger.c: 4 warnings, 0 errors
+compiling HAL_Adc.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_Adc.c(16): warning:  #1215-D: #warning directive: HAL_ADC模块使能!
+  #warning HAL_ADC模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_Adc.c(101): warning:  #1-D: last line of file ends without a newline
+         /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleHal\HAL_Adc.c: 5 warnings, 0 errors
+compiling HAL_Alarm.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_Alarm.c(15): warning:  #1215-D: #warning directive: HAL_ALARM模块使能!
+  #warning HAL_ALARM模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_Alarm.c(79): warning:  #940-D: missing return statement at end of non-void function "HAL_Alarm_InterruptReg" 
+  }
+..\Src\Source\Lock\ModuleHal\HAL_Alarm.c(97): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleHal\HAL_Alarm.c: 6 warnings, 0 errors
+compiling HAL_IR.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_IR.h(60): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleHal\HAL_IR.c(16): warning:  #1215-D: #warning directive: HAL_IR模块使能!
+  #warning HAL_IR模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_IR.c(147): warning:  #940-D: missing return statement at end of non-void function "HAL_IR_SetStart" 
+  }
+..\Src\Source\Lock\ModuleHal\HAL_IR.c(221): warning:  #940-D: missing return statement at end of non-void function "HAL_IR_Set" 
+  }
+..\Src\Source\Lock\ModuleHal\HAL_IR.c(347): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleHal\HAL_IR.c: 8 warnings, 0 errors
+compiling HAL_OnChipFlash.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleHal\HAL_OnChipFlash.c(17): warning:  #1215-D: #warning directive: HAL_ONCHIP_FLASH模块使能!
+  #warning HAL_ONCHIP_FLASH模块使能!
+..\Src\Source\Lock\ModuleHal\HAL_OnChipFlash.c: 4 warnings, 0 errors
+compiling MD5.c...
+compiling DRV_MBI5024.C...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_MBI5024.C(16): warning:  #1215-D: #warning directive: DRV_MBI5024模块使能!
+  #warning DRV_MBI5024模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_MBI5024.C: 4 warnings, 0 errors
+compiling DRV_FaceId.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c(22): warning:  #1215-D: #warning directive: DRV_FACE_ID模块使能!
+  #warning DRV_FACE_ID模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c(207): warning:  #940-D: missing return statement at end of non-void function "DRV_FaceId_ClearTxPar" 
+  }
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c(288): warning:  #177-D: variable "tmp"  was declared but never referenced
+      uint8_t *tmp;
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c(503): warning:  #111-D: statement is unreachable
+              break;
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c(506): warning:  #111-D: statement is unreachable
+              break;
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c(527): warning:  #177-D: variable "reTmp"  was declared but never referenced
+      int8_t reTmp = 0;
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c(110): warning:  #177-D: function "DRV_FaceId_RecvDatClear"  was declared but never referenced
+  static int8_t DRV_FaceId_RecvDatClear(void)
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c(156): warning:  #177-D: function "DRV_FaceId_DataAdd"  was declared but never referenced
+  static int8_t DRV_FaceId_DataAdd(uint8_t dat)
+..\Src\Source\Lock\ModuleDrv\DRV_FaceId.c: 11 warnings, 0 errors
+compiling rijndael.c...
+compiling MyConfig.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.c(20): warning:  #1215-D: #warning directive: MY_CONFIG模块使能!
+  #warning MY_CONFIG模块使能!
+..\Src\Source\Lock\ModuleDrv\MyConfig.c(81): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\MyConfig.c: 5 warnings, 0 errors
+compiling DRV_SysTimer.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_SysTimer.c(22): warning:  #1215-D: #warning directive: DRV_SYS_TIMER模块使能!
+  #warning DRV_SYS_TIMER模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_SysTimer.c: 4 warnings, 0 errors
+compiling DRV_KeySacn.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_KeySacn.c(21): warning:  #1215-D: #warning directive: DRV_KEY_SACN模块使能!
+  #warning DRV_KEY_SACN模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_KeySacn.c(85): warning:  #177-D: variable "keyValue2"  was declared but never referenced
+      uint8_t keyValue2 = 0xff;
+..\Src\Source\Lock\ModuleDrv\DRV_KeySacn.c(224): warning:  #1-D: last line of file ends without a newline
+         /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\DRV_KeySacn.c(27): warning:  #177-D: variable "lastKey"  was declared but never referenced
+  static uint8_t lastKey = 0xff;
+..\Src\Source\Lock\ModuleDrv\DRV_KeySacn.c: 7 warnings, 0 errors
+compiling DRV_Storage.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_Storage.c(16): warning:  #1215-D: #warning directive: DRV_STORAGE模块使能!
+  #warning DRV_STORAGE模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_Storage.c(378): warning:  #1-D: last line of file ends without a newline
+  	   /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\DRV_Storage.c: 5 warnings, 0 errors
+compiling DRV_Voice.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_Voice.c(37): warning:  #1215-D: #warning directive: DRV_VOICE模块使能!
+  #warning DRV_VOICE模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_Voice.c(590): warning:  #1-D: last line of file ends without a newline
+         /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\DRV_Voice.c: 5 warnings, 0 errors
+compiling DRV_Finger.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h(25): warning:  #47-D: incompatible redefinition of macro "SCI1"  (declared at line 12 of "..\Src\Source\drv\inc\uart_drv.h")
+  #define SCI1   (*(SCI_t   *)(0x40013000))
+..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h(26): warning:  #47-D: incompatible redefinition of macro "SCI2"  (declared at line 13 of "..\Src\Source\drv\inc\uart_drv.h")
+  #define SCI2   (*(SCI_t   *)(0x40014000))
+..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h(28): warning:  #47-D: incompatible redefinition of macro "SPI1"  (declared at line 59 of "..\Src\Source\drv\inc\spi_drv.h")
+  #define SPI1   (*(SPI_t   *)(0x40010000))
+..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h(29): warning:  #47-D: incompatible redefinition of macro "SPI2"  (declared at line 60 of "..\Src\Source\drv\inc\spi_drv.h")
+  #define SPI2   (*(SPI_t   *)(0x40011000))
+..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h(30): warning:  #47-D: incompatible redefinition of macro "SPI3"  (declared at line 61 of "..\Src\Source\drv\inc\spi_drv.h")
+  #define SPI3   (*(SPI_t   *)(0x40012000))
+..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h(39): warning:  #47-D: incompatible redefinition of macro "EPORT"  (declared at line 11 of "..\Src\Source\drv\inc\eport_drv.h")
+  #define EPORT  (*(EPORT_t *)(0x40019000))
+..\Src\Source\Lock\ModuleDrv\DRV_Finger.c(30): warning:  #1215-D: #warning directive: DRV_FINGER模块使能!
+  #warning DRV_FINGER模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_Finger.c(526): warning:  #111-D: statement is unreachable
+  		buff[0] = 1;
+..\Src\Source\Lock\ModuleDrv\DRV_Finger.c(1019): warning:  #111-D: statement is unreachable
+  		printf("del is ok  id \r\n");
+..\Src\Source\Lock\ModuleDrv\DRV_Finger.c(1025): warning:  #111-D: statement is unreachable
+  		printf("del is failed  id\r\n");
+..\Src\Source\Lock\ModuleDrv\DRV_Finger.c: 13 warnings, 0 errors
+compiling DRV_RTC.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_RTC.c(22): warning:  #1215-D: #warning directive: DRV_RTC模块使能!
+  #warning DRV_RTC模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_RTC.c(131): warning:  #940-D: missing return statement at end of non-void function "RTC_Seconds2Date" 
+  }
+..\Src\Source\Lock\ModuleDrv\DRV_RTC.c(121): warning:  #177-D: variable "days"  was declared but never referenced
+    unsigned int days;
+..\Src\Source\Lock\ModuleDrv\DRV_RTC.c(122): warning:  #177-D: variable "leap_y_count"  was declared but never referenced
+    unsigned short leap_y_count;
+..\Src\Source\Lock\ModuleDrv\DRV_RTC.c(224): warning:  #1-D: last line of file ends without a newline
+         /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\DRV_RTC.c: 8 warnings, 0 errors
+compiling DRV_Adc.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_Adc.c(23): warning:  #1215-D: #warning directive: DRV_ADC模块使能!
+  #warning DRV_ADC模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_Adc.c: 4 warnings, 0 errors
+compiling DRV_Comm.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(27): warning:  #1215-D: #warning directive: DRV_COMM模块使能!
+  #warning DRV_COMM模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(213): warning:  #177-D: variable "i"  was declared but never referenced
+      uint16_t i =0;
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(378): warning:  #177-D: variable "lenTmp"  was declared but never referenced
+      uint16_t lenTmp = 0;
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(397): warning:  #940-D: missing return statement at end of non-void function "DRV_Comm_ClearTxPar" 
+  }
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(640): warning:  #177-D: variable "lenTmp"  was declared but never referenced
+      uint16_t lenTmp =0; //长度缓存
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(854): warning:  #111-D: statement is unreachable
+              return 0;
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(754): warning:  #177-D: variable "reTmp"  was declared but never referenced
+      int8_t reTmp = 0;
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(755): warning:  #177-D: variable "chksumTmp"  was declared but never referenced
+      uint8_t chksumTmp = 0;
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(266): warning:  #177-D: function "DRV_Comm_RecvDatClear"  was declared but never referenced
+  static int8_t DRV_Comm_RecvDatClear(void)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(282): warning:  #177-D: function "DRV_Comm_SyncWordSet"  was declared but never referenced
+  static int8_t DRV_Comm_SyncWordSet(TYPEe_CommHead datType)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(297): warning:  #177-D: function "DRV_Comm_MsgIdSet"  was declared but never referenced
+  static int8_t DRV_Comm_MsgIdSet(uint8_t cmd)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(311): warning:  #177-D: function "DRV_Comm_SecretKey"  was declared but never referenced
+  static int8_t DRV_Comm_SecretKey(uint8_t *key)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(329): warning:  #177-D: function "DRV_Comm_DataAdd"  was declared but never referenced
+  static int8_t DRV_Comm_DataAdd(uint8_t dat)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(344): warning:  #177-D: function "DRV_Comm_DataAddBatch"  was declared but never referenced
+  static int8_t DRV_Comm_DataAddBatch(uint8_t *dat, uint32_t len)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(359): warning:  #177-D: function "DRV_Comm_SizeAddEmpty"  was declared but never referenced
+  static int8_t DRV_Comm_SizeAddEmpty(void)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(376): warning:  #177-D: function "DRV_Comm_SizeSet"  was declared but never referenced
+  static int8_t DRV_Comm_SizeSet(void)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(439): warning:  #177-D: function "DRV_Comm_GetOrChk"  was declared but never referenced
+  static uint8_t DRV_Comm_GetOrChk(uint8_t *dat, uint16_t len)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c(468): warning:  #177-D: function "DRV_Comm_SetChk"  was declared but never referenced
+  static uint16_t DRV_Comm_SetChk(void)
+..\Src\Source\Lock\ModuleDrv\DRV_Comm.c: 21 warnings, 0 errors
+compiling DRV_Alarm.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_Alarm.c(15): warning:  #1215-D: #warning directive: DRV_ALARM模块使能!
+  #warning DRV_ALARM模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_Alarm.c(114): warning:  #1-D: last line of file ends without a newline
+  	   /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\DRV_Alarm.c: 5 warnings, 0 errors
+compiling DRV_Power.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_Power.c(27): warning:  #1215-D: #warning directive: DRV_POWER模块使能!
+  #warning DRV_POWER模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_Power.c(91): warning:  #188-D: enumerated type mixed with another type
+  				return i;
+..\Src\Source\Lock\ModuleDrv\DRV_Power.c(297): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if ((time_test >= 0) && (time_test <= time))	 //如果是已经有值，则赋值给唤醒后的计数值
+..\Src\Source\Lock\ModuleDrv\DRV_Power.c(293): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint32_t i, time_test;
+..\Src\Source\Lock\ModuleDrv\DRV_Power.c(380): warning:  #177-D: variable "interval_time"  was declared but never referenced
+  	UINT8 interval_time = 0;							   //设置死机唤醒时间，基准是5s，设置为3，就是15秒，如果设置为0，就是不要唤醒功能
+..\Src\Source\Lock\ModuleDrv\DRV_Power.c(458): warning:  #177-D: variable "rst_source"  was declared but never referenced
+  	e_CPM_wakeupSource_Status rst_source = *(e_CPM_wakeupSource_Status *)CPM_WAKEUPSOURCE_REG;
+..\Src\Source\Lock\ModuleDrv\DRV_Power.c(62): warning:  #177-D: function "DRV_Power_ReuseChk"  was declared but never referenced
+  static TYPEe_ReuseInt DRV_Power_ReuseChk(void)
+..\Src\Source\Lock\ModuleDrv\DRV_Power.c: 10 warnings, 0 errors
+compiling DRV_IR.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_IR.h(60): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\DRV_IR.c(15): warning:  #1215-D: #warning directive: DRV_IR模块使能!
+  #warning DRV_IR模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_IR.c(185): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\DRV_IR.c: 6 warnings, 0 errors
+compiling DRV_I2C.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_I2C.c(15): warning:  #1215-D: #warning directive: DRV_I2C模块使能!
+  #warning DRV_I2C模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_I2C.c(228): warning:  #177-D: variable "u8_Buffer"  was declared but never referenced
+      INT8U u8_Buffer = 0;
+..\Src\Source\Lock\ModuleDrv\DRV_I2C.c(259): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\ModuleDrv\DRV_I2C.c: 6 warnings, 0 errors
+compiling api_aes.c...
+..\Src\Source\Lock\hostlib\api_aes.c(82): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_ecb_init(ctx->hal_ctx, is_enc, key1, keybytes);
+..\Src\Source\Lock\hostlib\api_aes.c(86): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_cbc_init(ctx->hal_ctx, is_enc, key1, keybytes, (uint8_t *)iv);
+..\Src\Source\Lock\hostlib\api_aes.c(90): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_ctr_init(ctx->hal_ctx, is_enc, key1, keybytes, (uint8_t *)iv);
+..\Src\Source\Lock\hostlib\api_aes.c(95): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_cfb_init(ctx->hal_ctx, is_enc, key1, keybytes, (uint8_t *)iv);
+..\Src\Source\Lock\hostlib\api_aes.c(130): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_ecb_process(ctx->hal_ctx, src, dst, size);
+..\Src\Source\Lock\hostlib\api_aes.c(133): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_cbc_process(ctx->hal_ctx, src, dst, size);
+..\Src\Source\Lock\hostlib\api_aes.c(136): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_ctr_process(ctx->hal_ctx, src, dst, size);
+..\Src\Source\Lock\hostlib\api_aes.c(139): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_cfb_process(ctx->hal_ctx, src, dst, size);
+..\Src\Source\Lock\hostlib\api_aes.c(142): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_cfb128_process(ctx->hal_ctx, src, dst, size);
+..\Src\Source\Lock\hostlib\api_aes.c(200): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_ecb_process(ctx->hal_ctx, tmp_buf, tmp_buf, tmp_size);
+..\Src\Source\Lock\hostlib\api_aes.c(203): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_cbc_process(ctx->hal_ctx, tmp_buf, tmp_buf, tmp_size);
+..\Src\Source\Lock\hostlib\api_aes.c(206): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_ctr_process(ctx->hal_ctx, tmp_buf, tmp_buf, tmp_size);
+..\Src\Source\Lock\hostlib\api_aes.c(209): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_cfb_process(ctx->hal_ctx, tmp_buf, tmp_buf, tmp_size);
+..\Src\Source\Lock\hostlib\api_aes.c(212): warning:  #188-D: enumerated type mixed with another type
+              ret = ls_hal_aes_cfb128_process(ctx->hal_ctx, tmp_buf, tmp_buf, tmp_size);
+..\Src\Source\Lock\hostlib\api_aes.c: 14 warnings, 0 errors
+compiling aes.c...
+compiling DRV_OnChipFlash.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\DRV_OnChipFlash.c(17): warning:  #1215-D: #warning directive: DRV_ONCHIP_FLASH模块使能!
+  #warning DRV_ONCHIP_FLASH模块使能!
+..\Src\Source\Lock\ModuleDrv\DRV_OnChipFlash.c: 4 warnings, 0 errors
+compiling api_hash.c...
+..\Src\Source\Lock\hostlib\api_hash.c(119): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_sha1_init(ctx->hal_ctx);
+..\Src\Source\Lock\hostlib\api_hash.c(138): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_sha256_init(ctx->hal_ctx);
+..\Src\Source\Lock\hostlib\api_hash.c(157): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_md5_init(ctx->hal_ctx);
+..\Src\Source\Lock\hostlib\api_hash.c(207): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_sha1_update(ctx->hal_ctx, src, size);
+..\Src\Source\Lock\hostlib\api_hash.c(229): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_sha256_update(ctx->hal_ctx, src, size);
+..\Src\Source\Lock\hostlib\api_hash.c(251): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_md5_update(ctx->hal_ctx, src, size);
+..\Src\Source\Lock\hostlib\api_hash.c(307): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_sha1_finish(ctx->hal_ctx, dgst);
+..\Src\Source\Lock\hostlib\api_hash.c(328): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_sha256_finish(ctx->hal_ctx, dgst);
+..\Src\Source\Lock\hostlib\api_hash.c(349): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_md5_finish(ctx->hal_ctx, dgst);
+..\Src\Source\Lock\hostlib\api_hash.c: 9 warnings, 0 errors
+compiling BasicFunc.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\basicFunc\BasicFunc.c(15): warning:  #1215-D: #warning directive: BASIC_FUNC模块使能!
+  #warning BASIC_FUNC模块使能!
+..\Src\Source\Lock\basicFunc\BasicFunc.c(59): warning:  #1-D: last line of file ends without a newline
+  /************************************Code End******************************************/
+..\Src\Source\Lock\basicFunc\BasicFunc.c: 4 warnings, 0 errors
+compiling api_hmac.c...
+..\Src\Source\Lock\hostlib\api_hmac.c(127): warning:  #188-D: enumerated type mixed with another type
+      ret = ali_hash_get_ctx_size(context->type, &size);
+..\Src\Source\Lock\hostlib\api_hmac.c(148): warning:  #188-D: enumerated type mixed with another type
+      ret = ali_hash_init(context->type, &context->hash_ctx);
+..\Src\Source\Lock\hostlib\api_hmac.c(239): warning:  #188-D: enumerated type mixed with another type
+      return 0;
+..\Src\Source\Lock\hostlib\api_hmac.c: 3 warnings, 0 errors
+compiling api_init.c...
+compiling api_rand.c...
+..\Src\Source\Lock\hostlib\api_rand.c(31): warning:  #188-D: enumerated type mixed with another type
+      ls_hal_crypt_result ret = 0;
+..\Src\Source\Lock\hostlib\api_rand.c(37): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_get_random(buf, len);
+..\Src\Source\Lock\hostlib\api_rand.c: 2 warnings, 0 errors
+compiling api_rsa.c...
+..\Src\Source\Lock\hostlib\api_rsa.c(49): warning:  #188-D: enumerated type mixed with another type
+      ls_hal_crypt_result ret = 0;
+..\Src\Source\Lock\hostlib\api_rsa.c(69): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_rsa_init(ctx->hal_ctx);
+..\Src\Source\Lock\hostlib\api_rsa.c(77): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_rsa_init_keypair(ctx->hal_ctx, keybits,
+..\Src\Source\Lock\hostlib\api_rsa.c(98): warning:  #188-D: enumerated type mixed with another type
+      ls_hal_crypt_result ret = 0;
+..\Src\Source\Lock\hostlib\api_rsa.c(120): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_rsa_init(ctx->hal_ctx);
+..\Src\Source\Lock\hostlib\api_rsa.c(127): warning:  #188-D: enumerated type mixed with another type
+      ret = ls_hal_rsa_init_pubkey(ctx->hal_ctx, keybits,
+..\Src\Source\Lock\hostlib\api_rsa.c: 6 warnings, 0 errors
+compiling api_sm2.c...
+compiling api_sm4.c...
+compiling base64.c...
+..\Src\Source\Lock\hostlib\base64.c(160): warning:  #223-D: function "strstr" declared implicitly
+      if(strstr(src,"=="))  
+..\Src\Source\Lock\hostlib\base64.c: 1 warning, 0 errors
+compiling chip_log.c...
+compiling dpm_core.c...
+..\Src\Source\Lock\hostlib\dpm_core.c(108): warning:  #68-D: integer conversion resulted in a change of sign
+          return -1;
+..\Src\Source\Lock\hostlib\dpm_core.c: 1 warning, 0 errors
+compiling dpm_sha256.c...
+compiling dpm_plat.c...
+compiling bignum.c...
+compiling id2_plat.c...
+compiling id2_util.c...
+compiling id2_client.c...
+..\Src\Source\Lock\hostlib\km.h(228): warning:  #1295-D: Deprecated declaration km_delete_all - give arg types
+  uint32_t km_delete_all();
+..\Src\Source\Lock\hostlib\km.h(390): warning:  #1295-D: Deprecated declaration km_init - give arg types
+  uint32_t km_init();
+..\Src\Source\Lock\hostlib\km.h(396): warning:  #1295-D: Deprecated declaration km_cleanup - give arg types
+  void km_cleanup();
+..\Src\Source\Lock\hostlib\id2_client.c(1169): warning:  #111-D: statement is unreachable
+      id2_log_info("set id2: %s\n", id2);
+..\Src\Source\Lock\hostlib\id2_client.c(1230): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(i>=0&&i<=9) 
+..\Src\Source\Lock\hostlib\id2_client.c: 5 warnings, 0 errors
+compiling km_to_irot.c...
+..\Src\Source\Lock\hostlib\km.h(228): warning:  #1295-D: Deprecated declaration km_delete_all - give arg types
+  uint32_t km_delete_all();
+..\Src\Source\Lock\hostlib\km.h(390): warning:  #1295-D: Deprecated declaration km_init - give arg types
+  uint32_t km_init();
+..\Src\Source\Lock\hostlib\km.h(396): warning:  #1295-D: Deprecated declaration km_cleanup - give arg types
+  void km_cleanup();
+..\Src\Source\Lock\hostlib\km_to_irot.c: 3 warnings, 0 errors
+compiling ls_hal_aes.c...
+compiling ls_hal_hash.c...
+compiling ls_hal_rand.c...
+compiling ls_hal_rsa.c...
+compiling ls_osa.c...
+compiling otp.c...
+..\Src\Source\Lock\hostlib\km.h(228): warning:  #1295-D: Deprecated declaration km_delete_all - give arg types
+  uint32_t km_delete_all();
+..\Src\Source\Lock\hostlib\km.h(390): warning:  #1295-D: Deprecated declaration km_init - give arg types
+  uint32_t km_init();
+..\Src\Source\Lock\hostlib\km.h(396): warning:  #1295-D: Deprecated declaration km_cleanup - give arg types
+  void km_cleanup();
+..\Src\Source\Lock\hostlib\otp.c: 3 warnings, 0 errors
+compiling rsa.c...
+compiling mtk_se_adapter.c...
+compiling md5.c...
+compiling se_driver.c...
+..\Src\Source\Lock\hostlib\timer.h(8): warning:  #1-D: last line of file ends without a newline
+  uint8_t check_timeout_ms(void);
+..\Src\Source\Lock\hostlib\se_driver.c(382): warning:  #940-D: missing return statement at end of non-void function "fm_i2c_transceive" 
+  }
+..\Src\Source\Lock\hostlib\se_driver.c(44): warning:  #177-D: variable "pgfm_SeFunc"  was declared but never referenced
+  static StSeFunc *pgfm_SeFunc = NULL;
+..\Src\Source\Lock\hostlib\se_driver.c: 3 warnings, 0 errors
+compiling sha256.c...
+compiling std_se_adapter.c...
+..\Src\Source\Lock\hostlib\std_se_adapter.c(178): warning:  #223-D: function "se_transmit" declared implicitly
+          ret = se_transmit(handle, cmd_buf, cmd_len, rsp_buf, rsp_len);
+..\Src\Source\Lock\hostlib\std_se_adapter.c(580): warning:  #111-D: statement is unreachable
+              break;
+..\Src\Source\Lock\hostlib\std_se_adapter.c(724): warning:  #186-D: pointless comparison of unsigned integer with zero
+          if (h < 0 || l < 0) {
+..\Src\Source\Lock\hostlib\std_se_adapter.c(724): warning:  #186-D: pointless comparison of unsigned integer with zero
+          if (h < 0 || l < 0) {
+..\Src\Source\Lock\hostlib\std_se_adapter.c(745): warning:  #223-D: function "printf" declared implicitly
+      printf("====> ID2 Client Generate AuthCode Start.\n");
+..\Src\Source\Lock\hostlib\std_se_adapter.c(121): warning:  #177-D: variable "ID2_APPLET_AID"  was declared but never referenced
+  static const uint8_t ID2_APPLET_AID[] = {0xA0, 0x00, 0x00, 0x00, 0x41, 0x6C, 0x69, 0x59, 0x75, 0x6E, 0x2E, 0x49, 0x44, 0x32};
+..\Src\Source\Lock\hostlib\std_se_adapter.c: 6 warnings, 0 errors
+compiling sha1.c...
+compiling timer.c...
+compiling adc_demo.c...
+compiling apdu_demo.c...
+compiling algo_demo.c...
+compiling ccm_demo.c...
+compiling cpm_demo.c...
+compiling bt_demo.c...
+compiling disboot_demo.c...
+compiling dma_demo.c...
+compiling crc_demo.c...
+compiling edma_demo.c...
+compiling eflash_demo.c...
+compiling eport_demo.c...
+compiling get_sn_demo.c...
+compiling i2c_demo.c...
+compiling icc_demo.c...
+compiling mcc_demo.c...
+compiling reboot_demo.c...
+compiling pwm_demo.c...
+compiling nfc_demo.c...
+compiling pci_demo.c...
+compiling pit32_demo.c...
+compiling reset_demo.c...
+compiling spi_demo.c...
+compiling rtc_demo.c...
+compiling sub_c0_demo.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\demo\sub_c0_demo.c: 1 warning, 0 errors
+compiling tc_demo.c...
+compiling tsi_demo.c...
+..\Src\Source\demo\tsi_demo.c(138): warning:  #111-D: statement is unreachable
+  	printf("Enter POFF1.5...\r\n");
+..\Src\Source\demo\tsi_demo.c(141): warning:  #223-D: function "printf_tsiReg" declared implicitly
+      printf_tsiReg();
+..\Src\Source\demo\tsi_demo.c(108): warning:  #177-D: variable "i"  was declared but never referenced
+  	UINT32 i;
+..\Src\Source\demo\tsi_demo.c: 3 warnings, 0 errors
+compiling uart_demo.c...
+compiling usb_demo.c...
+compiling usb_cdc_demo.c...
+compiling wdt_demo.c...
+compiling usb_hid_demo.c...
+compiling usb_ms_demo.c...
+compiling systick_demo.c...
+compiling dsp_demo.c...
+compiling lock_disjtag_demo.c...
+compiling dac_demo.c...
+..\Src\Source\demo\dac_demo.c(205): warning:  #223-D: function "TouchTask_ReadAction" declared implicitly
+  	key_data = TouchTask_ReadAction();		
+..\Src\Source\demo\dac_demo.c(206): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(key_data>=0&&key_data<=11)
+..\Src\Source\demo\dac_demo.c: 2 warnings, 0 errors
+compiling ssi_demo.c...
+compiling mrw_demo.c...
+..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h(25): warning:  #47-D: incompatible redefinition of macro "SCI1"  (declared at line 12 of "..\Src\Source\drv\inc\uart_drv.h")
+  #define SCI1   (*(SCI_t   *)(0x40013000))
+..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h(26): warning:  #47-D: incompatible redefinition of macro "SCI2"  (declared at line 13 of "..\Src\Source\drv\inc\uart_drv.h")
+  #define SCI2   (*(SCI_t   *)(0x40014000))
+..\Src\Source\demo\mrw_demo.c(279): warning:  #177-D: variable "ch1"  was declared but never referenced
+  	S32 ch1;
+..\Src\Source\demo\mrw_demo.c: 3 warnings, 0 errors
+compiling xip_demo.c...
+compiling common.c...
+assembling startup_ARMCM4.s...
+compiling sys.c...
+compiling delay.c...
+compiling debug.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\common\debug.c: 3 warnings, 0 errors
+compiling system_ARMCM4.c...
+compiling adc_dma.c...
+compiling adc_drv.c...
+compiling alg_drv.c...
+..\Src\Source\drv\alg_drv.c(865): warning:  #223-D: function "ModuleClk_On" declared implicitly
+  	ModuleClk_On(MODULE_CLK_SHA);
+..\Src\Source\drv\alg_drv.c(883): warning:  #223-D: function "ModuleClk_Off" declared implicitly
+  	ModuleClk_Off(MODULE_CLK_SHA);
+..\Src\Source\drv\alg_drv.c: 2 warnings, 0 errors
+compiling dac_drv.c...
+..\Src\Source\drv\dac_drv.c(123): warning:  #167-D: argument of type "int" is incompatible with parameter of type "PIT32_TypeDef *"
+  		PIT32_Init(PIT2,PIT32_CLK_DIV_1, g_ips_clk/1000000*us,FALSE);//config PIT2
+..\Src\Source\drv\dac_drv.c(123): warning:  #152-D: conversion of nonzero integer to pointer
+  		PIT32_Init(PIT2,PIT32_CLK_DIV_1, g_ips_clk/1000000*us,FALSE);//config PIT2
+..\Src\Source\drv\dac_drv.c: 2 warnings, 0 errors
+compiling c0_drv.c...
+..\Src\Source\drv\c0_drv.c(1141): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\Source\drv\c0_drv.c: 1 warning, 0 errors
+compiling ccm_drv.c...
+compiling cache_drv.c...
+compiling dmac_drv.c...
+..\Src\Source\drv\dmac_drv.c(143): warning:  #223-D: function "Audio_ISR" declared implicitly
+  			Audio_ISR();	
+..\Src\Source\drv\dmac_drv.c(158): warning:  #223-D: function "Audio_ISR" declared implicitly
+  			Audio_ISR();	
+..\Src\Source\drv\dmac_drv.c: 2 warnings, 0 errors
+compiling eflash_drv.c...
+compiling edma_drv.c...
+..\Src\Source\drv\edma_drv.c(190): warning:  #223-D: function "ModuleClk_On" declared implicitly
+  	ModuleClk_On(MODULE_CLK_EDMAC0);
+..\Src\Source\drv\edma_drv.c(337): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\Source\drv\edma_drv.c: 2 warnings, 0 errors
+compiling i2c_drv.c...
+compiling eport_drv.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\drv\eport_drv.c: 3 warnings, 0 errors
+compiling pci_drv.c...
+compiling crc_drv.c...
+compiling cpm_drv.c...
+compiling pit32_drv.c...
+..\Src\Source\drv\pit32_drv.c(77): warning:  #167-D: argument of type "int" is incompatible with parameter of type "PIT32_TypeDef *"
+  	PIT32_ISR(PIT1);
+..\Src\Source\drv\pit32_drv.c(77): warning:  #152-D: conversion of nonzero integer to pointer
+  	PIT32_ISR(PIT1);
+..\Src\Source\drv\pit32_drv.c(82): warning:  #167-D: argument of type "int" is incompatible with parameter of type "PIT32_TypeDef *"
+  	PIT32_ISR(PIT2);
+..\Src\Source\drv\pit32_drv.c(82): warning:  #152-D: conversion of nonzero integer to pointer
+  	PIT32_ISR(PIT2);
+..\Src\Source\drv\pit32_drv.c(107): warning:  #42-D: operand types are incompatible ("PIT32_TypeDef *" and "int")
+  		if(PITx==PIT1)
+..\Src\Source\drv\pit32_drv.c(107): warning:  #152-D: conversion of nonzero integer to pointer
+  		if(PITx==PIT1)
+..\Src\Source\drv\pit32_drv.c(109): warning:  #42-D: operand types are incompatible ("PIT32_TypeDef *" and "int")
+  		else if(PITx==PIT2)
+..\Src\Source\drv\pit32_drv.c(109): warning:  #152-D: conversion of nonzero integer to pointer
+  		else if(PITx==PIT2)
+..\Src\Source\drv\pit32_drv.c(223): warning:  #167-D: argument of type "int" is incompatible with parameter of type "PIT32_TypeDef *"
+  	PIT32_Init(PIT1,PIT32_CLK_DIV_1,delay_data,TRUE);
+..\Src\Source\drv\pit32_drv.c(223): warning:  #152-D: conversion of nonzero integer to pointer
+  	PIT32_Init(PIT1,PIT32_CLK_DIV_1,delay_data,TRUE);
+..\Src\Source\drv\pit32_drv.c: 10 warnings, 0 errors
+compiling pwm_drv.c...
+compiling reset_drv.c...
+compiling rtc_drv.c...
+compiling spi_drv.c...
+compiling tc_drv.c...
+compiling uart_drv.c...
+..\Src\Source\drv\uart_drv.c(473): warning:  #940-D: missing return statement at end of non-void function "UART_ReceiveData" 
+  }
+..\Src\Source\drv\uart_drv.c: 1 warning, 0 errors
+compiling wdt_drv.c...
+compiling usi_drv.c...
+compiling usb_cdc_config.c...
+compiling usb_cdc_control.c...
+compiling usb_drv.c...
+compiling usb_hid_config.c...
+compiling usb_hid_control.c...
+compiling usb_hid_isr.c...
+compiling usb_ms_config.c...
+compiling usbdev_control.c...
+compiling usb_ms_control.c...
+compiling usbdev_isr.c...
+compiling trng_drv.c...
+compiling systick_drv.c...
+..\Src\Source\demo\sub_c0_demo.h(16): warning:  #1295-D: Deprecated declaration Sub_C0_into_poweroff2 - give arg types
+  extern void Sub_C0_into_poweroff2();
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\Lock\ModuleDrv\MyConfig.h(76): warning:  #1565-D: white space between backslash and newline in line splice ignored
+      uint8_t *pTmp = (uint8_t *)(format);            \  
+..\Src\Source\drv\systick_drv.c: 3 warnings, 0 errors
+compiling xip_drv.c...
+compiling ssi_drv.c...
+compiling ioctrl_drv.c...
+compiling tsi_drv.c...
+compiling bin_lib_table.c...
+compiling Cache.c...
+compiling ClockAndPower.c...
+..\Src\Source\app\MRW SENSOR\bsp\ClockAndPower.c(112): warning:  #61-D: integer operation result is out of range
+  								| RIMS_APB;
+..\Src\Source\app\MRW SENSOR\bsp\ClockAndPower.c(153): warning:  #177-D: function "cpm_set_sysclk_div"  was declared but never referenced
+  static void cpm_set_sysclk_div(U32 div)
+..\Src\Source\app\MRW SENSOR\bsp\ClockAndPower.c(121): warning:  #177-D: function "delay"  was declared but never referenced
+  static void delay(volatile U32 val)
+..\Src\Source\app\MRW SENSOR\bsp\ClockAndPower.c: 3 warnings, 0 errors
+compiling Timeout.c...
+compiling Flash.c...
+..\Src\Source\app\MRW SENSOR\bsp\Flash.c(188): warning:  #223-D: function "SSI_EFlash_Get_Status1" declared implicitly
+  	return SSI_EFlash_Get_Status1(SSI1);
+..\Src\Source\app\MRW SENSOR\bsp\Flash.c(203): warning:  #177-D: variable "status"  was declared but never referenced
+  	U8 status;
+..\Src\Source\app\MRW SENSOR\bsp\Flash.c(294): warning:  #177-D: variable "status"  was declared but never referenced
+  	U8 status;
+..\Src\Source\app\MRW SENSOR\bsp\Flash.c(295): warning:  #177-D: variable "loop"  was declared but never referenced
+  	U32 loop;
+..\Src\Source\app\MRW SENSOR\bsp\Flash.c(296): warning:  #177-D: variable "mod"  was declared but never referenced
+  	U32 mod;
+..\Src\Source\app\MRW SENSOR\bsp\Flash.c(297): warning:  #177-D: variable "i"  was declared but never referenced
+  	U32 i;
+..\Src\Source\app\MRW SENSOR\bsp\Flash.c(298): warning:  #177-D: variable "read_len"  was declared but never referenced
+  	U32 read_len;
+..\Src\Source\app\MRW SENSOR\bsp\Flash.c: 7 warnings, 0 errors
+compiling GPIO.c...
+compiling EPORT.c...
+compiling Timer.c...
+compiling Uart.c...
+compiling EDMA.c...
+compiling DMA.c...
+..\Src\Source\app\MRW SENSOR\lib\DMA.c(20): warning:  #177-D: function "dma_reg_init"  was declared but never referenced
+  static void dma_reg_init(UINT32 dma_base_addr)
+..\Src\Source\app\MRW SENSOR\lib\DMA.c: 1 warning, 0 errors
+compiling PIT.c...
+compiling SCI.c...
+compiling SPI.c...
+compiling SSI.c...
+..\Src\Source\app\MRW SENSOR\lib\SSI.c(78): warning:  #223-D: function "SSI_EFlash_Get_Status1" declared implicitly
+  	if((SSI_EFlash_Get_Status1(SSIx)&0x02) == 0x02)
+..\Src\Source\app\MRW SENSOR\lib\SSI.c: 1 warning, 0 errors
+compiling system.c...
+compiling SensorSpi.c...
+compiling SEGGER_RTT.c...
+compiling SEGGER_RTT_printf.c...
+compiling fsm.c...
+..\Src\Source\drv\inc\uart_drv.h(12): warning:  #47-D: incompatible redefinition of macro "SCI1"  (declared at line 25 of "..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h")
+  #define SCI1		        ((UART_TypeDef *)(SCI1_BASE_ADDR))
+..\Src\Source\drv\inc\uart_drv.h(13): warning:  #47-D: incompatible redefinition of macro "SCI2"  (declared at line 26 of "..\Src\Source\app\MRW SENSOR\lib\CCM_MEM.h")
+  #define SCI2		        ((UART_TypeDef *)(SCI2_BASE_ADDR))
+..\Src\Source\app\MRW SENSOR\fsm.c(638): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if( (para>=0) && (para<=3))
+..\Src\Source\app\MRW SENSOR\fsm.c(737): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if( (page>=0) && (page<4))
+..\Src\Source\app\MRW SENSOR\fsm.c(1170): warning:  #223-D: function "hardwareInit" declared implicitly
+  	hardwareInit();
+..\Src\Source\app\MRW SENSOR\fsm.c(1387): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint32_t i = 0;
+..\Src\Source\app\MRW SENSOR\fsm.c(82): warning:  #177-D: function "fsmSetAddr"  was declared but never referenced
+  static void fsmSetAddr(void);
+..\Src\Source\app\MRW SENSOR\fsm.c: 7 warnings, 0 errors
+compiling Sensor.c...
+compiling apdu_dispatcher.c...
+..\Src\Source\app\apdu\apdu_commands.h(28): warning:  #47-D: incompatible redefinition of macro "INS_READ_VERSION"  (declared at line 11 of "..\Src\Source\app\apdu\apdu_dispatcher.h")
+  #define INS_READ_VERSION			0xE2//获取软件和硬件版本号
+..\Src\Source\app\apdu\apdu_commands.h(62): warning:  #1295-D: Deprecated declaration Recover_ROM - give arg types
+  extern void Recover_ROM();
+..\Src\Source\app\apdu\apdu_commands.h(63): warning:  #1295-D: Deprecated declaration WriteChipSN - give arg types
+  extern void WriteChipSN();
+..\Src\Source\app\apdu\apdu_commands.h(64): warning:  #1295-D: Deprecated declaration Earse_ID2_FLAG - give arg types
+  extern void Earse_ID2_FLAG();
+..\Src\Source\app\apdu\apdu_commands.h(66): warning:  #1295-D: Deprecated declaration InsGetResponse - give arg types
+  void InsGetResponse();
+..\Src\Source\app\apdu\apdu_commands.h(69): warning:  #1295-D: Deprecated declaration apdu_get_vendor_info - give arg types
+  void apdu_get_vendor_info();
+..\Src\Source\app\apdu\apdu_commands.h(70): warning:  #1295-D: Deprecated declaration apdu_get_sn - give arg types
+  void apdu_get_sn();
+..\Src\Source\app\apdu\apdu_commands.h(71): warning:  #1295-D: Deprecated declaration apdu_get_data - give arg types
+  void apdu_get_data();
+..\Src\Source\app\apdu\apdu_commands.h(72): warning:  #1295-D: Deprecated declaration apdu_hash - give arg types
+  U16 apdu_hash();
+..\Src\Source\app\apdu\apdu_commands.h(73): warning:  #1295-D: Deprecated declaration apdu_sym_op - give arg types
+  U16 apdu_sym_op();
+..\Src\Source\app\apdu\apdu_commands.h(74): warning:  #1295-D: Deprecated declaration apdu_scr_trans - give arg types
+  void apdu_scr_trans();
+..\Src\Source\app\apdu\apdu_dispatcher.c: 11 warnings, 0 errors
+compiling apdu_drv.c...
+compiling dac_audio.c...
+..\Src\Source\app\dac_audio\dac_audio.c(479): warning:  #167-D: argument of type "int" is incompatible with parameter of type "PIT32_TypeDef *"
+  	PIT32_Stop(PIT2);
+..\Src\Source\app\dac_audio\dac_audio.c(479): warning:  #152-D: conversion of nonzero integer to pointer
+  	PIT32_Stop(PIT2);
+..\Src\Source\app\dac_audio\dac_audio.c(545): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned short *"
+  				adpcm_decoder(EncodeBuffer, tmp_buf, AUDIO_FRAME_SIZE, &dec_state,value);
+..\Src\Source\app\dac_audio\dac_audio.c(547): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned short *"
+  		adpcm_decoder(EncodeBuffer, tmp_buf, AUDIO_FRAME_SIZE, &dec_state,value);	 
+..\Src\Source\app\dac_audio\dac_audio.c(553): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned short *"
+  				adpcm_decoder(EncodeBuffer, tmp_buf, less_num, &dec_state,value);
+..\Src\Source\app\dac_audio\dac_audio.c(562): warning:  #223-D: function "Interrupt_Task" declared implicitly
+  			Interrupt_Task();
+..\Src\Source\app\dac_audio\dac_audio.c(603): warning:  #167-D: argument of type "int" is incompatible with parameter of type "PIT32_TypeDef *"
+  	PIT32_Stop(PIT2);
+..\Src\Source\app\dac_audio\dac_audio.c(603): warning:  #152-D: conversion of nonzero integer to pointer
+  	PIT32_Stop(PIT2);
+..\Src\Source\app\dac_audio\dac_audio.c(669): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned short *"
+  				adpcm_decoder(EncodeBuffer, tmp_buf, AUDIO_FRAME_SIZE, &dec_state,value);
+..\Src\Source\app\dac_audio\dac_audio.c(677): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned short *"
+  				adpcm_decoder(EncodeBuffer, tmp_buf, less_num, &dec_state,value);
+..\Src\Source\app\dac_audio\dac_audio.c(687): warning:  #223-D: function "Interrupt_Task" declared implicitly
+        Interrupt_Task();
+..\Src\Source\app\dac_audio\dac_audio.c(742): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned char *"
+  		 SSI_EFlash_QUAD_Read(SSI1, ini_addr, tmp_buf, AUDIO_FRAME_SIZE);//???????????spi flash???
+..\Src\Source\app\dac_audio\dac_audio.c(757): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned char *"
+    	SSI_EFlash_QUAD_Read(SSI1, ini_addr+0x2000+start_addr, tmp_buf, data_len);	//??????
+..\Src\Source\app\dac_audio\dac_audio.c(776): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned char *"
+  		 SSI_EFlash_QUAD_Read(SSI1, ini_addr, tmp_buf, AUDIO_FRAME_SIZE);//??????
+..\Src\Source\app\dac_audio\dac_audio.c(822): warning:  #167-D: argument of type "UINT16 *" is incompatible with parameter of type "unsigned char *"
+  	  SSI_EFlash_QUAD_Read(SSI1, ini_addr+0x2000+start_addr, Buffer2, data_len);	
+..\Src\Source\app\dac_audio\dac_audio.c(827): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "unsigned char *"
+  		 SSI_EFlash_QUAD_Read(SSI1, ini_addr+0x2000+start_addr, tmp_buf, data_len);	
+..\Src\Source\app\dac_audio\dac_audio.c(863): warning:  #177-D: variable "temp1"  was declared but never referenced
+  unsigned char temp1;
+..\Src\Source\app\dac_audio\dac_audio.c(1008): warning:  #167-D: argument of type "UINT8 *" is incompatible with parameter of type "UINT32"
+  	 paly_status=DAC_Audio_SSI_Demo((UINT8 *)(AudioMem[VoiceType][AudioAddr]) ,0x10200000,AudioMem[VoiceType][AudioSize],AUDIO_FREQ ,value);
+..\Src\Source\app\dac_audio\dac_audio.c(1014): warning:  #167-D: argument of type "UINT8 *" is incompatible with parameter of type "UINT32"
+  		DAC_Audio_SSI_SRAM_PLAY((UINT8 *)data_buf1,sizeof(data_buf1),22050,1,value);  //????	
+..\Src\Source\app\dac_audio\dac_audio.c: 19 warnings, 0 errors
+compiling fm175xx.c...
+compiling icc_hardware.c...
+compiling icc_protocol.c...
+compiling iso14443b.c...
+compiling time_stamp_api.c...
+compiling emv_layer4.c...
+compiling pcd_interface.c...
+compiling iso14443a.c...
+compiling iccemv.c...
+compiling tsi_app.c...
+..\Src\Source\app\tsi\tsi_app.c(342): warning:  #223-D: function "drv_SubC0_getWakeupSource" declared implicitly
+      else if (drv_SubC0_getWakeupSource(pu32_wakeupSource) == 0)
+..\Src\Source\app\tsi\tsi_app.c: 1 warning, 0 errors
+compiling tsi_hal.c...
+compiling aes_drv.c...
+..\Src\Source\app\apdu\aes_drv.c(48): warning:  #223-D: function "EDMAC_2ALG" declared implicitly
+  	EDMAC_2ALG(PN5, (U32)pin, (U32)pout, len);
+..\Src\Source\app\apdu\aes_drv.c(38): warning:  #177-D: variable "i"  was declared but never referenced
+      UINT32 i;
+..\Src\Source\app\apdu\aes_drv.c(97): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\Source\app\apdu\aes_drv.c: 3 warnings, 0 errors
+compiling apdu_algo_cmd.c...
+..\Src\Source\app\apdu\id2.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\Source\app\apdu\apdu_commands.h(62): warning:  #1295-D: Deprecated declaration Recover_ROM - give arg types
+  extern void Recover_ROM();
+..\Src\Source\app\apdu\apdu_commands.h(63): warning:  #1295-D: Deprecated declaration WriteChipSN - give arg types
+  extern void WriteChipSN();
+..\Src\Source\app\apdu\apdu_commands.h(64): warning:  #1295-D: Deprecated declaration Earse_ID2_FLAG - give arg types
+  extern void Earse_ID2_FLAG();
+..\Src\Source\app\apdu\apdu_commands.h(66): warning:  #1295-D: Deprecated declaration InsGetResponse - give arg types
+  void InsGetResponse();
+..\Src\Source\app\apdu\apdu_commands.h(69): warning:  #1295-D: Deprecated declaration apdu_get_vendor_info - give arg types
+  void apdu_get_vendor_info();
+..\Src\Source\app\apdu\apdu_commands.h(70): warning:  #1295-D: Deprecated declaration apdu_get_sn - give arg types
+  void apdu_get_sn();
+..\Src\Source\app\apdu\apdu_commands.h(71): warning:  #1295-D: Deprecated declaration apdu_get_data - give arg types
+  void apdu_get_data();
+..\Src\Source\app\apdu\apdu_commands.h(72): warning:  #1295-D: Deprecated declaration apdu_hash - give arg types
+  U16 apdu_hash();
+..\Src\Source\app\apdu\apdu_commands.h(73): warning:  #1295-D: Deprecated declaration apdu_sym_op - give arg types
+  U16 apdu_sym_op();
+..\Src\Source\app\apdu\apdu_commands.h(74): warning:  #1295-D: Deprecated declaration apdu_scr_trans - give arg types
+  void apdu_scr_trans();
+..\Src\Source\app\apdu\apdu.h(63): warning:  #47-D: incompatible redefinition of macro "P3"  (declared at line 12 of "..\Src\Source\app\apdu\apdu_commands.h")
+  #define P3				apdu_cmdbuf[4]
+..\Src\Source\app\apdu\apdu.h(70): warning:  #47-D: incompatible redefinition of macro "APDU_CMD_LEN"  (declared at line 59 of "..\Src\Source\app\apdu\apdu_drv.h")
+  #define	APDU_CMD_LEN		4
+..\Src\Source\app\apdu\apdu_algo_cmd.c(33): warning:  #223-D: function "memcpy" declared implicitly
+  	memcpy((UINT8*)crypto, IV, 16);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(59): warning:  #223-D: function "memcpy" declared implicitly
+  	memcpy((UINT8*)crypto, IV, 16);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(76): warning:  #177-D: variable "cla"  was declared but never referenced
+  	U8 cla, ALG_mode, i;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(76): warning:  #177-D: variable "i"  was declared but never referenced
+  	U8 cla, ALG_mode, i;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(78): warning:  #177-D: variable "block"  was declared but never referenced
+  	U32 block, left;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(78): warning:  #177-D: variable "left"  was declared but never referenced
+  	U32 block, left;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(79): warning:  #177-D: variable "mlen"  was declared but never referenced
+  	U32 len,mlen,idlen;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(79): warning:  #177-D: variable "idlen"  was declared but never referenced
+  	U32 len,mlen,idlen;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(149): warning:  #167-D: argument of type "uint16_t **" is incompatible with parameter of type "U32 *"
+  	status = ID2_hash_op(apdu_buf,(U32 *)(apdu_buf+1),len,(U32*)rbuf,&rlen,p2,p3);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(168): warning:  #940-D: missing return statement at end of non-void function "apdu_hash" 
+  }
+..\Src\Source\app\apdu\apdu_algo_cmd.c(182): warning:  #223-D: function "memcpy" declared implicitly
+  	memcpy((U8*)DE_key, (U8*)(enkey_addr), 24);   //调用ID2 key的密文
+..\Src\Source\app\apdu\apdu_algo_cmd.c(176): warning:  #177-D: variable "SN"  was declared but never referenced
+  	U8 SN[8];
+..\Src\Source\app\apdu\apdu_algo_cmd.c(177): warning:  #177-D: variable "temp_key"  was declared but never referenced
+  	U32 temp_key[12];
+..\Src\Source\app\apdu\apdu_algo_cmd.c(179): warning:  #177-D: variable "De_storage_key"  was declared but never referenced
+  	U32 De_storage_key[6];  //用于加密存储随机数
+..\Src\Source\app\apdu\apdu_algo_cmd.c(235): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy((U8*)MAC_data,pdata_after_sm+(ivlen+oplen)/4,maclen);//lsun:搬MAC
+..\Src\Source\app\apdu\apdu_algo_cmd.c(252): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy((U8*)MAC_data,pdata_after_sm+(ivlen+oplen)/4,maclen);//lsun:搬MAC
+..\Src\Source\app\apdu\apdu_algo_cmd.c(274): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len,0x00,8);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(279): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len,0x00,paddinglen);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(286): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy((U8*)MAC_data,pdata_after_sm+(ivlen+oplen)/4,maclen);//lsun:搬MAC
+..\Src\Source\app\apdu\apdu_algo_cmd.c(290): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len-maclen,0x00,8);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(295): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len-maclen,0x00,paddinglen);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(313): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len,0x80,1);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(319): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len,0x80,1);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(327): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy((U8*)MAC_data,pdata_after_sm+(ivlen+oplen)/4,maclen);//lsun:搬MAC
+..\Src\Source\app\apdu\apdu_algo_cmd.c(331): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len-maclen,0x80,1);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(337): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len-maclen,0x80,1);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(357): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len,0x00,16);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(362): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len,0x00,paddinglen);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(369): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy((U8*)MAC_data,pdata_after_sm+(ivlen+oplen)/4,maclen);//lsun:搬MAC
+..\Src\Source\app\apdu\apdu_algo_cmd.c(373): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len-maclen,0x00,16);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(378): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len-maclen,0x00,paddinglen);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(396): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len,0x80,1);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(402): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len,0x80,1);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(410): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy((U8*)MAC_data,pdata_after_sm+(ivlen+oplen)/4,maclen);//lsun:搬MAC
+..\Src\Source\app\apdu\apdu_algo_cmd.c(414): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len-maclen,0x80,1);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(420): warning:  #223-D: function "memset" declared implicitly
+  					memset((U8*)pdata+len-maclen,0x80,1);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(433): warning:  #111-D: statement is unreachable
+  			break;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(438): warning:  #223-D: function "memcpy" declared implicitly
+  	memcpy((U8*)IV_data,(U8*)pdataposition,ivlen);//lsun:此处piv=0x800005，不是word对齐
+..\Src\Source\app\apdu\apdu_algo_cmd.c(445): warning:  #223-D: function "memmove" declared implicitly
+  	memmove(pcmd,pindata,len);//将解密数据移动Word对齐地址
+..\Src\Source\app\apdu\apdu_algo_cmd.c(465): warning:  #223-D: function "des_op" declared implicitly
+  			des_op(lenmode,DES_OP_ECB,0,(endemode==0x51)? DES_ENCRYPT : DES_DECRYPT,(U32*)DE_key , (U32*)IV_data ,pindata,poutdata,oplen);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(474): warning:  #223-D: function "printf" declared implicitly
+     printf("De_storage_key[%d]=0x%04x\r\n",i,DE_key[i]);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(513): warning:  #223-D: function "memcmp" declared implicitly
+  					status = memcmp((U8*)MAC_data, (U8*)poutdata, maclen);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(567): warning:  #223-D: function "memcmp" declared implicitly
+  					status = memcmp((U8*)MAC_data, (U8*)poutdata, maclen);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(199): warning:  #177-D: variable "p1"  was declared but never referenced
+  	U8 p1, p2,i,paddinglen;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(199): warning:  #177-D: variable "p2"  was declared but never referenced
+  	U8 p1, p2,i,paddinglen;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(200): warning:  #177-D: variable "ret"  was declared but never referenced
+  	U16 ret,fileid,psec, rnum,status;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(200): warning:  #177-D: variable "fileid"  was declared but never referenced
+  	U16 ret,fileid,psec, rnum,status;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(200): warning:  #177-D: variable "psec"  was declared but never referenced
+  	U16 ret,fileid,psec, rnum,status;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(200): warning:  #177-D: variable "rnum"  was declared but never referenced
+  	U16 ret,fileid,psec, rnum,status;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(201): warning:  #177-D: variable "keyid"  was declared but never referenced
+  	U8 lenmode, symmode,endemode, keyid,sksel, key_mode;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(201): warning:  #177-D: variable "sksel"  was declared but never referenced
+  	U8 lenmode, symmode,endemode, keyid,sksel, key_mode;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(201): warning:  #550-D: variable "key_mode"  was set but never used
+  	U8 lenmode, symmode,endemode, keyid,sksel, key_mode;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(202): warning:  #177-D: variable "addr"  was declared but never referenced
+  	U32 addr;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(203): warning:  #177-D: variable "user_sym_key"  was declared but never referenced
+  	USER_SYMKEY_STRUCT user_sym_key;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(210): warning:  #177-D: variable "templen"  was declared but never referenced
+  	U32 oplen,ivlen,templen,maclen;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(211): warning:  #550-D: variable "piv"  was set but never used
+  	U32 *piv;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(214): warning:  #177-D: variable "first_sec_data_len"  was declared but never referenced
+  	U32 first_sec_data_len = 0;
+..\Src\Source\app\apdu\apdu_algo_cmd.c(609): warning:  #167-D: argument of type "uint16_t **" is incompatible with parameter of type "U16 *"
+  	status = ID2_sym_op(apdu_buf,(U32 *)(apdu_buf+5),len,(U32*)pbuffer1,&rlen);
+..\Src\Source\app\apdu\apdu_algo_cmd.c(628): warning:  #940-D: missing return statement at end of non-void function "apdu_sym_op" 
+  }
+..\Src\Source\app\apdu\apdu_algo_cmd.c: 72 warnings, 0 errors
+compiling apdu_basic_cmd.c...
+..\Src\Source\app\apdu\id2.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\Source\app\apdu\apdu_basic_cmd.c(41): warning:  #177-D: variable "p1"  was declared but never referenced
+  	U8 p1;
+..\Src\Source\app\apdu\apdu_basic_cmd.c(42): warning:  #177-D: variable "pbuf"  was declared but never referenced
+  	U32 *pbuf;
+..\Src\Source\app\apdu\apdu_basic_cmd.c: 3 warnings, 0 errors
+compiling des_drv.c...
+..\Src\Source\app\apdu\des_drv.c(46): warning:  #223-D: function "EDMAC_2ALG" declared implicitly
+  	EDMAC_2ALG(PN6, (U32)pin, (U32)pout, datalen);
+..\Src\Source\app\apdu\des_drv.c: 1 warning, 0 errors
+compiling sha_drv.c...
+..\Src\Source\app\apdu\sha_drv.c(77): warning:  #177-D: variable "reg"  was declared but never referenced
+  	unsigned int reg;
+..\Src\Source\app\apdu\sha_drv.c(289): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy(phash_Cx->wMidRes, (U8*)SM3_IV, len*4);
+..\Src\Source\app\apdu\sha_drv.c: 2 warnings, 0 errors
+assembling cmb_fault.S...
+compiling sm.c...
+..\Src\Source\app\apdu\apdu_commands.h(62): warning:  #1295-D: Deprecated declaration Recover_ROM - give arg types
+  extern void Recover_ROM();
+..\Src\Source\app\apdu\apdu_commands.h(63): warning:  #1295-D: Deprecated declaration WriteChipSN - give arg types
+  extern void WriteChipSN();
+..\Src\Source\app\apdu\apdu_commands.h(64): warning:  #1295-D: Deprecated declaration Earse_ID2_FLAG - give arg types
+  extern void Earse_ID2_FLAG();
+..\Src\Source\app\apdu\apdu_commands.h(66): warning:  #1295-D: Deprecated declaration InsGetResponse - give arg types
+  void InsGetResponse();
+..\Src\Source\app\apdu\apdu_commands.h(69): warning:  #1295-D: Deprecated declaration apdu_get_vendor_info - give arg types
+  void apdu_get_vendor_info();
+..\Src\Source\app\apdu\apdu_commands.h(70): warning:  #1295-D: Deprecated declaration apdu_get_sn - give arg types
+  void apdu_get_sn();
+..\Src\Source\app\apdu\apdu_commands.h(71): warning:  #1295-D: Deprecated declaration apdu_get_data - give arg types
+  void apdu_get_data();
+..\Src\Source\app\apdu\apdu_commands.h(72): warning:  #1295-D: Deprecated declaration apdu_hash - give arg types
+  U16 apdu_hash();
+..\Src\Source\app\apdu\apdu_commands.h(73): warning:  #1295-D: Deprecated declaration apdu_sym_op - give arg types
+  U16 apdu_sym_op();
+..\Src\Source\app\apdu\apdu_commands.h(74): warning:  #1295-D: Deprecated declaration apdu_scr_trans - give arg types
+  void apdu_scr_trans();
+..\Src\Source\app\apdu\sm.c(196): warning:  #177-D: variable "psec"  was declared but never referenced
+  	U16 psec, lsec, len;
+..\Src\Source\app\apdu\sm.c(196): warning:  #177-D: variable "lsec"  was declared but never referenced
+  	U16 psec, lsec, len;
+..\Src\Source\app\apdu\sm.c(197): warning:  #177-D: variable "addr"  was declared but never referenced
+  	U32 addr;
+..\Src\Source\app\apdu\sm.c(203): warning:  #177-D: variable "keytype"  was declared but never referenced
+  	U8 keytype;
+..\Src\Source\app\apdu\sm.c(205): warning:  #177-D: variable "buf"  was declared but never referenced
+  	U8 buf[5];
+..\Src\Source\app\apdu\sm.c: 15 warnings, 0 errors
+compiling cm_backtrace.c...
+linking...
+Program Size: Code=158648 RO-data=11368 RW-data=9596 ZI-data=104740  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output ..\obj\bin\CCM4202S_Demo_EFM.bin ..\obj\obj_debug_efm\ccm4202s_demo_efm.axf
+"..\obj\obj_debug_efm\ccm4202s_demo_efm.axf": Error: Q0122E: Could not open file '..\obj\obj_debug_efm\ccm4202s_demo_efm.axf': No such file or directory
+Finished: 0 information, 0 warning and 1 error messages.
+After Build - User command #2: fromelf --text -a -c --output ..\obj\hex\CCM4202S_Demo_EFM.asm ..\obj\obj_debug_efm\ccm4202s_demo_efm.axf
+"..\obj\obj_debug_efm\ccm4202s_demo_efm.axf": Error: Q0122E: Could not open file '..\obj\obj_debug_efm\ccm4202s_demo_efm.axf': No such file or directory
+Finished: 0 information, 0 warning and 1 error messages.
+"..\Obj\obj_debug_efm\ccm4202s_demo_efm_app.axf" - 0 Error(s), 558 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:58
+</pre>
+</body>
+</html>

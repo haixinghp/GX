@@ -1,0 +1,16 @@
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\app\nfc\iso14443b.c
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Include\type.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\ccore\ccm4202s.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\ccore\core_cm4.h
+..\obj\obj_debug_efm\iso14443b.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\ccore\core_cmInstr.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\ccore\cmsis_armcc.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\ccore\core_cmFunc.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\ccore\core_cmSimd.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\ccore\system_CCM4202S.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\app\nfc\pcd_interface.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\app\nfc\fm175xx.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\app\nfc\iso14443b.h
+..\obj\obj_debug_efm\iso14443b.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\obj_debug_efm\iso14443b.o: ..\Src\Source\app\nfc\emv_layer4.h
+..\obj\obj_debug_efm\iso14443b.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

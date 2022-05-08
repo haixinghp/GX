@@ -1,0 +1,295 @@
+#if (WIFI_TIME_STEP  == 33)
+
+    DEBUG_LOG_OUT("Write mcu updata\n");
+    HAL_OnChipFlash_Init();  //片内FLASH初始化
+    HAL_OnChipFlash_Write(APP_EXTIST_ADDRESS, AppProgramMCU, 4); //标志置位
+    
+    DEBUG_LOG_OUT("cpu reset\n");
+    HAL_Power_CPURst(); //重启CPU
+    while(1);
+#endif         
+#if (WIFI_TIME_STEP  == 32)
+    DEBUG_LOG_OUT("Write mcu updata\n");
+    HAL_OnChipFlash_Init();  //片内FLASH初始化
+    /*ID2测试用*/
+    U32 ID2_data[3];
+
+ U32 En_storage[4];  //用于加密存储随机数
+ EFLASH_Init(g_sys_clk);
+ EFLASH_SetWritePermission();
+    
+    ID2_data[0]=0x56FFFF00;
+ ID2_data[1]=0x2c3f4213;
+ ID2_data[2]=0x006E43DA;
+ 
+ En_storage[0]=0xC132DD16;
+ En_storage[1]=0x71D1CC73;
+ En_storage[2]=0x5FE4477C;
+ En_storage[3]=0x1EF9C7C9;
+//ID2_data[0]=0x00FFFF00;
+// ID2_data[1]=0x14FFFFFF;
+// ID2_data[2]=0x00D9B785;
+// 
+// En_storage[0]=0x5A8C4C9A;
+// En_storage[1]=0xC741AD8B;
+// En_storage[2]=0x9D1D3D91;
+// En_storage[3]=0x0FBC01F4;
+    	UINT32 read_buf[6],i;
+  Program_ID2_Page(EFLASH_ID2_SN_ADDR,ID2_data,3);
+
+    
+    
+ Program_ID2_Page(EFLASH_ID2_AES_KEY_ADDR,En_storage,4);
+ 
+ 
+ /*测试结束*/
+    HAL_OnChipFlash_Write(APP_EXTIST_ADDRESS, AppProgramMCU, 4); //标志置位
+    
+    DEBUG_LOG_OUT("cpu reset\n");
+    HAL_Power_CPURst(); //重启CPU
+    while(1);
+#endif     
+#if (WIFI_TIME_STEP  == 31)
+    uint8_t t1=0;
+    t1 |= 0xf0;
+    DEBUG_LOG_OUT("t1 :%X\n",t1);
+    t1 |= 0xf0;
+    DEBUG_LOG_OUT("t1 b:%X\n",t1);
+    while(1);
+#endif      
+#if (WIFI_TIME_STEP  == 30)
+    extern void DRV_MBI5024_Out(u16 dat, u8 enable);
+//    M_LED_B_PWM_OUT_1();
+//    M_LED_B_PWM_OUT_PP();
+//    M_LED_W_OUT_1(); 
+//    M_LED_W_OUT_PP();
+//    DRV_MBI5024_Out(0x2000,1);
+//    DelayMS(10);
+//    DRV_MBI5024_Out(0x4000,1);
+//    HAL_KeyLight_batterySet
+//    HAL_KeyLight_sysStatusSet(eColorGreen);
+//    HAL_KeyLight_batterySetDir(eColorRed); //红灯
+    while(1);
+#endif    
+#if (WIFI_TIME_STEP  == 29)
+    HAL_KeyLight_DirDispaly(HAL_KEY_LIGHT_ONCE_2);
+    while(1);
+#endif	        
+#if (WIFI_TIME_STEP  == 28)
+    HAL_Comm_BleSendDirWithLen(eBleWifiToolTest, sizeof(TYPEs_BleAck));
+    
+    HAL_Comm_RevcDeal();
+    while(1);
+#endif	        
+#if (WIFI_TIME_STEP  == 27)
+    extern void DRV_FaceId_OpenPow(void);
+    DRV_FaceId_OpenPow();    //给模块上电
+    while(1);
+#endif	     
+#if (WIFI_TIME_STEP  == 26)
+    EPORT_ConfigGpio(EPORT_PIN35, GPIO_INPUT); 
+    EPORT_PullupConfig(EPORT_PIN35, DISABLE); 
+	M_X_IRQ_9555_IN_NOPULL();
+    M_X_IRQ_9555_EXIT_RISE_ENABLE();
+    M_KEY_IRQ_IN_IPU();
+	M_KEY_IRQ_EXIT_FALL_ENABLE();
+    while(1);
+#endif	    
+#if (WIFI_TIME_STEP  == 25)
+	void Menu_Comm_BleQueryLockConfigTable(void);
+    Menu_Comm_BleQueryLockConfigTable();
+    while(1);
+#endif	       
+#if (WIFI_TIME_STEP  == 24)
+	M_X_FACE_POW_EN_OUT_PP();
+    M_X_FACE_POW_EN_OUT_1();
+    while(1);
+#endif	        
+#if (WIFI_TIME_STEP  == 23)
+	extern void Menu_Comm_BleCatEyeSN(void);
+	Menu_Comm_BleCatEyeSN();
+#endif	    
+#if (WIFI_TIME_STEP  == 22)
+   M_X_CHANGE_9555_OUT_PP();
+   M_X_CHANGE_9555_OUT_0();
+#endif	          
+#if (WIFI_TIME_STEP  == 21)
+   extern void Menu_Comm_BleWifiSetParm1(void);
+    Menu_Comm_BleWifiSetParm1();
+#endif	  
+#if (WIFI_TIME_STEP  == 20)
+    storageSave.sysDat.keyDef = 1;
+#endif	        
+#if (WIFI_TIME_STEP  == 19)
+
+    #if 0
+    storageSave.sysDat.wifiMainSw = MSG_WIFI_LOGUP_MAIN_SW_ON_CONFIG;
+     DEBUG_LOG_OUT("storageSave.sysDat.wifiMainSwA:%d\n",storageSave.sysDat.wifiMainSw);
+    HAL_Storage_WriteSysData(&storageSave.sysDat);  
+    storageSave.sysDat.wifiMainSw = 0;
+    HAL_Storage_ReadSysData(&storageSave.sysDat);
+    DEBUG_LOG_OUT("storageSave.sysDat.wifiMainSw:%d\n",storageSave.sysDat.wifiMainSw);
+    #else
+    storageSave.sysDat.wifiMainSw = MSG_WIFI_LOGUP_MAIN_SW_OFF_CONFIG;
+     DEBUG_LOG_OUT("storageSave.sysDat.wifiMainSwA:%d\n",storageSave.sysDat.wifiMainSw);
+    HAL_Storage_WriteSysData(&storageSave.sysDat);  
+    storageSave.sysDat.wifiMainSw = 1;
+    HAL_Storage_ReadSysData(&storageSave.sysDat);
+    DEBUG_LOG_OUT("storageSave.sysDat.wifiMainSw:%d\n",storageSave.sysDat.wifiMainSw);
+    #endif
+    while(1);
+#endif	    
+#if (WIFI_TIME_STEP  == 18)
+    st_InputInfo.FingerIdTmp=0;
+	DEBUG_LOG_OUT("Empty id is:%x\n",st_InputInfo.FingerIdTmp);
+            fn_JumpMenu(enum_Menu_AddFingerStep1);                                   //进入注册流程。
+#if defined(SYSTEM_FINGER_EN)
+            HAL_Finger_RegStart(); //开启注册过程
+#endif                             // SYSTEM_FINGER_EN
+#endif	    
+    
+#if (WIFI_TIME_STEP  == 17)
+	HAL_IR_Init();
+	HAL_IR_SendData("1234",4);
+	while(1)
+	{
+		
+//		Menu_Finger_BleAddFingerStep();
+	}
+#endif		
+#if (WIFI_TIME_STEP  == 16)
+	extern void Menu_Finger_BleAddFingerStep(void);
+	st_InputInfo.FingerIdTmp = 1;
+	while(1)
+	{
+		Menu_Finger_BleAddFingerStep();
+	}
+#endif			
+#if (WIFI_TIME_STEP  == 14)
+	M_4052_EN_OUT_PP();
+    M_4052_A0_OUT_PP();
+	M_4052_EN_OUT_0();
+    M_4052_A0_OUT_0();
+    while(1);
+//	USI_ConfigGpio(USI, USI_RST, GPIO_OUTPUT);
+//	USI_WriteGpioData(USI, USI_RST, Bit_SET);
+#endif		
+#if (WIFI_TIME_STEP  == 13)
+	Disboot_Demo();
+#endif	
+#if (WIFI_TIME_STEP  == 12)	
+	extern uint32_t Quick(uint32_t a, uint32_t b, uint32_t c);
+	DEBUG_LOG_OUT("Quick result1:%d\n",Quick(5,6,23));
+	DEBUG_LOG_OUT("Quick result2:%d\n",Quick(5,15,23));
+#endif		
+#if (WIFI_TIME_STEP  == 11)
+	DEBUG_LOG_OUT("storageSave.sysDat.dhG:%X\n",storageSave.sysDat.dhG);
+	DEBUG_LOG_OUT("storageSave.sysDat.dhP:%X\n",storageSave.sysDat.dhP);	
+	storageSave.sysDat.dhG = 1;
+	storageSave.sysDat.dhP = 2;
+	HAL_Storage_WriteSysData(&storageSave.sysDat);
+	DEBUG_LOG_OUT("storageSave.sysDat.dhG:%X\n",storageSave.sysDat.dhG);
+	DEBUG_LOG_OUT("storageSave.sysDat.dhP:%X\n",storageSave.sysDat.dhP);
+	#if 1
+	storageSave.sysDat.dhG = 0;
+	storageSave.sysDat.dhP = 0;
+	HAL_Storage_ReadSysData(&storageSave.sysDat);
+	DEBUG_LOG_OUT("storageSave.sysDat.dhG:%X\n",storageSave.sysDat.dhG);
+	DEBUG_LOG_OUT("storageSave.sysDat.dhP:%X\n",storageSave.sysDat.dhP);
+	#endif
+#endif	
+#if (WIFI_TIME_STEP  == 10)
+	Init_Trng();
+	for(uint8_t i =0;i<20;i++)
+    {
+		DEBUG_LOG_OUT("%d ,",GetRandomWord());
+    }
+	DEBUG_LOG_OUT("\n");
+#endif	
+#if (WIFI_TIME_STEP  == 9)
+	storageSave.UserDat.UserID[0] = 1;
+	storageSave.UserDat.UserID[1] = 2;
+	storageSave.UserDat.UserID[2] = 2;
+	storageSave.UserDat.UserID[3] = 3;
+	storageSave.UserDat.UserID[4] = 4;
+	storageSave.UserDat.UserID[5] = 5;
+	storageSave.UserDat.UserID[6] = 6;
+	storageSave.UserDat.UserID[7] = 7;
+	storageSave.UserDat.UserID[12] = 0x88;
+	DEBUG_LOG_OUT("Write UserID IS:\n");
+//	DEBUG_LOG_OUT_HEX(storageSave.UserDat.UserID,13);
+//	HAL_Storage_SaveOneUserReg(MSG_SMARTKEY_REG_MEM_ST,
+//                               MSG_SMARTKEY_REG_SIZE,
+//                               4,
+//                               &storageSave.UserDat); //保存信息
+	memset((uint8_t *)&storageSave.UserDat,0,sizeof(storageSave.UserDat));
+	HAL_Storage_GetOneUserReg(MSG_SMARTKEY_REG_MEM_ST,
+							  MSG_SMARTKEY_REG_SIZE,
+							  4,
+							  &storageSave.UserDat); //读取参数
+	DEBUG_LOG_OUT("Read UserID IS:\n");
+	DEBUG_LOG_OUT_HEX(storageSave.UserDat.UserID,13);						  
+	memset((uint8_t *)&storageSave.UserDat,0,sizeof(storageSave.UserDat));
+	HAL_Storage_GetOneUserReg(MSG_SMARTKEY_REG_MEM_ST,
+							  MSG_SMARTKEY_REG_SIZE,
+							  3,
+							  &storageSave.UserDat); //读取参数
+	DEBUG_LOG_OUT("Read UserID 3 IS:\n");
+	DEBUG_LOG_OUT_HEX(storageSave.UserDat.UserID,13);	
+#endif		
+#if (WIFI_TIME_STEP  == 8)
+	DEBUG_LOG_OUT("MAC IS:\n");
+	DEBUG_LOG_OUT_HEX(storageSave.hardwareData.mac,6);
+#endif	
+#if (WIFI_TIME_STEP  == 7)
+	msgVideoCallData.captureTime = 8; 
+	BSWAP_SAVE_32(msgVideoCallData.captureTime);
+	msgVideoCallData.enableRecord = 1; //使能抓拍
+	HAL_FaceId_CmdDealStart(eFaceIdCmdVideoCallData,0);
+
+//	HAL_FaceId_VideoCallDataStart();
+#endif			
+#if (WIFI_TIME_STEP  == 6)	
+	msgVideoCallData.captureTime = 8; 
+	BSWAP_SAVE_32(msgVideoCallData.captureTime);
+	msgVideoCallData.enableRecord = 1; //使能抓拍
+	HAL_FaceId_VideoCallDataStart();
+#endif		
+#if (WIFI_TIME_STEP  == 5)	
+	wifiSendParm.sendType = eWifiSendTypeAlarmPry;
+	msgTriggerCaptureData.mediaType = 0; //视频
+	msgTriggerCaptureData.captureTime=15;
+	BSWAP_SAVE_32(msgTriggerCaptureData.captureTime);
+	msgTriggerCaptureData.enableCloudStorage = 1; //使能云存储
+	msgTriggerCaptureData.videoCaptureType = wifiSendParm.sendType; //抓拍类型
+	wifiSendParm.catEyeStatus = eCatEyeStatusBusy; //猫眼忙碌
+	HAL_FaceId_TriggerCaptureDataStart();
+#endif		
+#if (WIFI_TIME_STEP  == 4)
+	HAL_FaceId_VerifyUserStop();
+	wifiSendParm.sendType = eWifiSendTypeAlarmPry; //撬锁报警
+	Menu_WifiCmdAlarmUpdata(); //填写数据
+	HAL_FaceId_CmdDealStart(eFaceIdCmdDataPassThrough,0);
+//	HAL_FaceId_DataPassThroughStart(); //开始透传
+#endif		
+#if (WIFI_TIME_STEP  == 3)
+	HAL_FaceId_VerifyUserStop();
+	wifiSendParm.sendType = eWifiSendTypeUnlockUpdata;
+	wifiSendParm.unlockType = eWifiunlockTypePwd;
+	st_InputInfo.userID = 0;
+	pWifiCmdUnlockRealUpdata->pageId[0] = (uint8_t)(st_InputInfo.userID >> 24);
+	pWifiCmdUnlockRealUpdata->pageId[1] = (uint8_t)(st_InputInfo.userID >> 16);
+	pWifiCmdUnlockRealUpdata->pageId[2] = (uint8_t)(st_InputInfo.userID >> 8);
+	pWifiCmdUnlockRealUpdata->pageId[3] = (uint8_t)(st_InputInfo.userID);
+	Menu_WifiLockLogUpdata(); //wifi推送
+//	Menu_WifiLockLogUpdata(); //填写数据
+//	HAL_FaceId_CmdDealStart(eFaceIdCmdDataPassThrough,0);
+////	HAL_FaceId_DataPassThroughStart(); //开始透传
+#endif	
+#if (WIFI_TIME_STEP  == 0)
+	extern void Menu_Comm_BleWifiSetParm1(void);
+	Menu_Comm_BleWifiSetParm1();
+#elif (WIFI_TIME_STEP  == 1)
+	extern void Menu_Comm_BleAliyunSecretKeySetParm(void);
+	Menu_Comm_BleAliyunSecretKeySetParm();	
+#endif
